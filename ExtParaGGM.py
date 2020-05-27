@@ -123,10 +123,27 @@ if bug == 1:
     plt.colorbar()
     plt.show()
     
+    plt.imshow(db_DEM_1 == id_gra, cmap='Blues')
+    plt.show()
+    
+    print(20 * '-')
+    print(hept0)
+    print(hept0 * 5 * 5 * ((1 / 1000) ** 2))
+    
     plt.imshow(db_DEM_2, origin="lower", cmap='Set1', interpolation='nearest')
     plt.gca().invert_yaxis()
     plt.colorbar()
     plt.show()
+    
+    plt.imshow(db_DEM_2 == id_gra, cmap='Blues')
+    plt.show()
+
+    print(20 * '-')
+    print(np.sum(db_DEM_2 == id_gra))
+    print(hept0 + hept0 * dt * (hf2g + hh2g + hw2g + ho2g - hg2f - hg2h - hg2w - hg2o))
+    print(np.sum(db_DEM_2 == id_gra) * 5 * 5 * ((1 / 1000) ** 2))
+    
+    print(20 * '-')
 
 print('Grass initial area : ' + str(hept0 * 5 * 5 * ((1 / 1000) ** 2) ))
 print('-----------------------------------')
