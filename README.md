@@ -1,8 +1,8 @@
 # Cattle_Raising_Model
 ## Cattle raising model
 ## by: icjrc
-### ----- CONTAIN: ---------
-1. 
+### Content:
+#### 1. 
 file: ExtParaGGM.py
 Obj: Extarc parameter for grass sub model for castle raising model
 Requires: numpy, os, matplotlib, osgeo
